@@ -31,6 +31,7 @@ For this week’s example I have chosen the command **chmod**. It is used to mod
 
     `$ chmod a+w file.txt`
 
+This week I still had some trouble using Linux efficiently without instructions for every action, as I didn't remember most of the commands from last week. However, I'm slowly but surely getting better. 
 
 ### Week 3: Basic Corpus Processing
 

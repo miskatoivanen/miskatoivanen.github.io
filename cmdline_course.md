@@ -10,7 +10,7 @@ Command line tools for linguists KIK-LG219 is an introduction course to Linux an
 
 Introduces commands such as: **cat, mv, mkdir, cd, wget, man, echo, touch, emacs**
 
-The first week focuses on how to create and navigate between directories on Linux. Basic terminology and information on what a command line is exactly is introduced. The week’s most useful commands from a linguistic perspective were **wget**, which retrieves material such as text files from the Internet, and **emacs**, which is a text editor that can be used to examine text files. With just these two commands, it is already possible to do some corpus linguistics. However, command line can be used for much more than just examining corpora. One command that will be quite useful later on is **echo**. This command simply prints the string written after it. So, the command
+The first week focuses on how to create and navigate between directories on Linux. Basic terminology and information on what a command line is exactly is introduced. The week’s most useful commands from a linguistic perspective were `wget`, which retrieves material such as text files from the Internet, and `emacs`, which is a text editor that can be used to examine text files. With just these two commands, it is already possible to do some corpus linguistics. However, command line can be used for much more than just examining corpora. One command that will be quite useful later on is `echo`. This command simply prints the string written after it. So, the command
 
     `$ echo “Hi!”`
 
@@ -29,7 +29,7 @@ Introduces commands such as: **ls, cp, ln, chmod, sort, killall, ssh, scp, gzip,
 This week students learn how to copy, move and remove entire directories. Student also learn about processes, process management, and standard system files, all of which are fundamental in understanding how Linux works, as well as remote servers. The week also includes information on privacy and permissions.
 For this week’s example I have chosen the command **chmod**. It is used to modify users’ permissions to read (r), write (w) and execute (w) files and directories. Users here mean the owner of the file (u), group the file belongs to (g), and others (o). For example, the following command grants writing permission for all users:
 
-    `$ chmod a+w file.txt`
+    `$ chmod ugo+w file.txt`
 
 This week I still had some trouble using Linux efficiently without instructions for every action, as I didn't remember most of the commands from last week. However, I'm slowly but surely getting better. 
 
@@ -56,23 +56,14 @@ Week 4 expands on things introduced in week 3. Last week included creating word 
 
       `$ echo “I like dogs!” | sed s/dogs/cats`
 
-Here “dogs” is a Regex search pattern, meaning that the command finds all instances of the word “dogs” in the text (or in this case, the echo command’s output), while “cats” is the replacement string. In other words, all instances of the word “dogs” will be replaced with the word “cats” if this command is executed. The output would be “I like cats!”. This is also an example of piping commands, another theme of this week; it simply means that commands are combined in a way in which the first command’s output is the input for the next ones. As seen in the example, this is done by writing the commands in correct order after one another and using `|` to separate them.
+Here “dogs” is a Regex search pattern, meaning that the command finds all instances of the word “dogs” in the text (or in this case, the echo command’s output), while “cats” is the replacement string. In other words, all instances of the word “dogs” will be replaced with the word “cats” if this command is executed. The output would be “I like cats!”. This is also an example of piping commands, another theme of this week; it simply means that commands are combined in a way in which the first command’s output is the input for the next one. As seen in the example, this is done by writing the commands in correct order after one another and using `|` to separate them.
 
 As with week 3, I found this week’s material interesting and useful. However, this week’s material felt quite a bit more challenging and I think I’m going to need more practice with `sed` in the future.
 
 
 ### Week 5: Scripting and Configuration Files
 
-Week 5 focuses on scripts, more specifically bash scripts. These scripts are text files with several commands written into them. When the script is executed, just like a singular command would be, it executed all of the commands it includes. This makes for example creating frequency lists very easy. With a ready script including all necessary commands needed for creating frequency lists, the process is far quicker and far easier as only one script needs to be executed instead all of the necessary commands one by one with attention paid to the right order. Here is a simple example of a script that
-
-This week’s material also includes configuration files. For example, bash configuration files can be used to:
-  * customize your prompt
-  * change the hostname for your computer
-  * change the length of your command history
-  * switch your preferred editor
-  * change your timezone
-
-Here’s an example of a very basic script.
+Week 5 focuses on scripts, more specifically bash scripts. These scripts are text files with several commands written into them. When the script is executed, just like a singular command would be, it executed all of the commands it includes. This makes for example creating frequency lists very easy. With a ready script including all necessary commands needed for creating frequency lists, the process is far quicker and far easier as only one script needs to be executed instead all of the necessary commands one by one with attention paid to the right order. Here’s an example of a very basic script.
 
 ```
 #!/bin/bash/
@@ -81,6 +72,13 @@ Here’s an example of a very basic script.
 
 echo "Hi, I'm a script!"
 ```
+
+This week’s material also includes configuration files. For example, bash configuration files can be used to:
+  * customize your prompt
+  * change the hostname for your computer
+  * change the length of your command history
+  * switch your preferred editor
+  * change your timezone
 
 Week 5 was definitely the hardest one for me. I didn’t have time to properly study any of the material, so I only managed to grasp very basic concepts. Scripts are definitely something I’ll have to come back to in the future…
 
